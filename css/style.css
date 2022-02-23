@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --chicken: #f9a5d0;
+    --beef: #e44550;
+    --sushi: #edbd82;
+    --bg: #b1b1b1;
+    --border: 3px solid #000;
+}
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+  
+  .menu-title{
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .container{
+   width: 100%;
+   padding: 20px;
+   position: relative;
+   top: 3rem;
+  }
+  
+  .item{
+    height: 220px;
+    position: relative;
+    top: 0;
+    background-color:var(--bg);
+    margin: 1rem;
+    padding: 1.5rem;
+    border: var(--border);
+  }
+  
+  .item p{
+    margin-top: 18px;
+    font-size:1.1rem;
+  }
+  
+  .item-title{
+    position: absolute;
+    top:0;
+    right: 0px;
+    padding: 6px 90px;
+    border-left: var(--border);
+    border-bottom: var(--border);
+  }
+  
+  #title-1 {
+    background-color: var(--chicken);
+  } 
+  
+  #title-2{
+    background-color: var(--beef);
+  }
+  
+  #title-3{
+    background-color: var(--sushi);
+  }
+
+  /* Simple Responsive Framework. */
+/*------ Desktop ------*/
+@media (min-width: 992px){
+
+    .item p{
+        font-size:.9rem;
+      }
+    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+      float: left;  
+    }
+    .col-lg-1 {
+      width: 8.33%;
+    }
+    .col-lg-2 {
+      width: 16.66%;
+    }
+    .col-lg-3 {
+      width: 25%;
+    }
+    .col-lg-4 {
+      width: 33.33%;
+    }
+    .col-lg-5 {
+      width: 41.66%;
+    }
+    .col-lg-6 {
+      width: 50%;
+    }
+    .col-lg-7 {
+      width: 58.33%;
+    }
+    .col-lg-8 {
+      width: 66.66%;
+    }
+    .col-lg-9 {
+      width: 74.99%;
+    }
+    .col-lg-10 {
+      width: 83.33%;
+    }
+    .col-lg-11 {
+      width: 91.66%;
+    }
+    .col-lg-12 {
+      width: 100%;
+    }
+  
+  }
+  
+  
+  /*------ Tablet display ------*/
+  @media (min-width: 768px) and (max-width: 991px){
+    .col-lg-4 {
+      width: 50%;
+      float: left;
+    }
+    .col-lg-tablet{
+     width: 100%;
+     float: left;
+   }
+  
+   .item p{
+    font-size: 1rem;
+  }
+
+  }
+  
+  
+  /*------ Mobile display ------*/
+  @media (max-width: 767px){
+    .col-lg-4{
+      width: 100%;
+      float: left;
+    }
+  }
